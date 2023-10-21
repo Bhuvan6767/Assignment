@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="SurveyForm.css" />
+</head>
+
+<body style="background-color: darkgray;">
+
+    <form id="surveyForm" class="survey-form">
+        <h3 class="header">Survey Form</h3>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" class="input-field" required>
+        <p id="firstNameError" class="error-message"></p>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" class="input-field" required>
+        <p id="lastNameError" class="error-message"></p>
+
+        <label for="dateofbirth">Date of Birth:</label>
+        <input type="date" id="dateofbirth" class="input-field" required>
+        <p id="dobError" class="error-message"></p>
+
+        <label for="country">Country:</label>
+        <select id="country" class="input-field" required>
+            <option value="India">India</option>
+            <option value="Argentina">Argentina</option>
+            <option value="UK">UK</option>
+        </select>
+        <p id="countryError" class="error-message"></p>
+
+        <div class="gender-section">
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" class="radio-button"> <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" class="radio-button"> <label
+                for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" class="radio-button"> <label
+                for="other">Other</label>
+            <p id="genderError" class="error-message"></p>
+        </div>
+
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" class="input-field" required>
+        <p id="professionError" class="error-message"></p>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="input-field" required>
+        <p id="emailError" class="error-message"></p>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" class="input-field" required>
+        <p id="mobileError" class="error-message"></p>
+
+        <input type="submit" value="Submit" class="submit-button">
+        <input type="reset" value="Reset" class="reset-button">
+    </form>
+
+    <script src="SurveyForm.js"></script>
+</body>
+
+</html>
